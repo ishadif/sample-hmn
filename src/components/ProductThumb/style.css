@@ -1,0 +1,111 @@
+.wrap {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+.wrap:hover .favoriteOverlay{
+    flex-direction: row;
+    position: absolute;
+    background: transparent;
+    z-index: 2;
+    display: block;
+    cursor: pointer;
+}
+.wrap:hover .imageWrap{
+    background-color: #fff;
+    box-shadow: 0px 0px 7px 1px #eee;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.imageWrap {
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.image {
+    width: 100%;
+    height: auto;
+}
+.favoriteOverlay {
+    position: absolute;
+    background: transparent;
+    text-align: right;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+    display: none;
+}
+.typeOverlay {
+    background-color: #DA544F;
+    border-radius: 3px;
+    color: #fff;
+    position: absolute;
+    flex: 1;
+    padding: 2px 5px 2px 5px;
+}
+
+.infoWrap {
+    cursor: pointer;
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+    padding: 8px 0px;
+}
+.title {
+    text-overflow: ellipsis;
+    font-weight: 300;
+    font-size: 14px;
+    width: 100%;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.supplier {
+    text-overflow: ellipsis;
+    font-weight: 300;
+    font-size: 12px;
+    color: #777;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.rating {
+    flex: 1;
+}
+
+.priceWrap {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.price {
+    flex: 1;
+    color: #DA544F;
+    font-size: 14px;
+    font-weight: 300;
+}
+.priceDiscountedRow {
+    display: flex;
+    flex-direction: row;
+    min-height: 20px;
+}
+.normalPrice {
+    flex: 4;
+    color: #555;
+    font-size: 12px;
+    font-weight: 300;
+    text-decoration: line-through;
+    vertical-align: middle;
+}
+.discountWrap {
+    flex: 1;
+    border-radius: 50px 0 0 50px;
+    background-color: #DA544F;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 300;
+    padding: 2px 0px 2px 10px;
+}
